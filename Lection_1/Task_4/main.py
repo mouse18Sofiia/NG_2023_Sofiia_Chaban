@@ -10,25 +10,25 @@ operation = input('''What action do you want to take?:
 ''')
 
 
-def calculate_result(operation, x, y):
+def calculate_result(operation, x1, y1):
     if operation == "+":
-        return x + y
+        return x1 + y1
     elif operation == "-":
-        return x - y
+        return x1 - y1
     elif operation == "*":
-        return x * y
+        return x1 * y1
     elif operation == "/":
-        if y == 0:
+        if y1 == 0:
             print("Error: Division by zero")
             return None
-        return x / y
+        return x1 / y1
     elif operation == "^":
-        return x ** y
+        return x1 ** y1
     elif operation == "sqrt":
-        if x < 0:
+        if x1 < 0:
             print("Error: Square root of a negative number is undefined")
             return None
-        return x ** 0.5
+        return x1 ** 0.5
     else:
         print("Invalid operation")
         return None
